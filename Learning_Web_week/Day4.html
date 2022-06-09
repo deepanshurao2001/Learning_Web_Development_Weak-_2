@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width,intial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The picture element</h1>
+    <picture>
+        <source media="(min-width:1000px)" srcset="https://images.unsplash.com/photo-1533450718592-29d45635f0a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+        <source media="(min-width:465px)" srcset="https://images.unsplash.com/photo-1526034332220-067b0f400e06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=406&q=80">
+        <img src="https://media.istockphoto.com/photos/british-short-hair-cat-and-golden-retriever-picture-id992637094">
+    </picture>
+    <p>Resize the browser to see different versions of the picture loading at different viewport sizes.
+        The browser looks for the first source element where the media query matches the user's current viewport width,
+        and fetches the image specified in the srcset attribute
+    </p>
+    <p>The img element is required as the last child tag of the picture declaration block.
+        The img element is used to provide backward compatibility for browsers that do not support the picture element, or if none of the source tags matched.
+        </p>        
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Deepanshu</title>
+    </head>
+    <body>
+        <canvas id="mycanvas" height="100px" width="200px" style="border: 1px solid grey;">
+        Your browser does not support the HTML canvas tag</canvas>
+        <script>
+            var c = document.getElementById("mycanvas");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(95,50,40,0,2*Math.PI);
+            ctx.stroke();
+        </script>
+        <canvas id="mycanvas2" height="100px" width="200px" style="border: 1px solid grey;"></canvas>
+        <script>
+            var c = document.getElementById("mycanvas2");
+            var ctx = c.getContext("2d");
+            ctx.font = "30px Arial";
+            ctx.fillText("Hello World",10,50)
+        </script>
+        <canvas id="mycanvas3" height="100px" width="200px" style="border: 1px solid grey;"></canvas>
+        <script>
+            var c = document.getElementById("mycanvas3");
+            var ctx =  c.getContext("2d");
+            ctx.font = "30px Arial";
+            ctx.strokeText("Hello World",10,50);
+        </script>
+        <canvas id="mycanvas4" height="100px " width="200px" style="border: 1px solid grey;"></canvas>
+        <script>
+            var c = document.getElementById("mycanvas4");
+            var ctx = c.getContext("2d");
+            var grd = ctx.createLinearGradient(0,0,200,0);
+            grd.addColorStop(0,"red");
+            grd.addColorStop(1,"white");
+            ctx.fillStyle = grd;
+            ctx.fillRect(10,10,150,80);
+        </script>
+          <canvas id="mycanvas5" height="100px " width="200px" style="border: 1px solid grey;"></canvas>
+          <script>
+              var c = document.getElementById("mycanvas5");
+              var ctx = c.getContext("2d");
+              var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+              grd.addColorStop(0,"red");
+              grd.addColorStop(1,"white");
+              ctx.fillStyle = grd;
+              ctx.fillRect(10,10,150,80);
+          </script>
+    </body>
+</html>

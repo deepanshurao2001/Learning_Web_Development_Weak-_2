@@ -1,0 +1,77 @@
+<html>
+    <style>
+
+        * {
+            font-family: sans-serif;
+            
+        }
+
+        * {
+            box-sizing: content-box;
+        }
+
+body {
+    margin: 0px;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+}
+.left{
+    flex: 0.2;
+    border: 1px solid black;
+    
+}
+.center{
+    flex: 0.5;
+    border: 1px solid black;
+}
+.right{
+    flex: 0.3;
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+}
+.input-search{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    background-color: beige;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 7px;
+}
+
+.input-search::placeholder {
+    text-align: center;
+}
+
+</style>
+    <body>
+        <div class="main">
+            <div class="left">
+
+            </div>
+            <div class="center">
+
+            </div>
+
+            <div class="right">
+
+               <div>
+                <label class="lable-cand">Meeting Participant(127)</label>
+                <input class="input-search" type="text" placeholder="Search participant">
+               </div>
+
+               <div>
+
+                Hi
+
+               </div>
+                
+
+            </div>
+
+        </div>
+    </body>
+</html>
